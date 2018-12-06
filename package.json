@@ -1,0 +1,15 @@
+{
+  "name": "playground",
+  "version": "0.6.0",
+  "devDependencies": {
+    "browserify": "^16.2.3",
+    "http-server": "^0.11.1",
+    "redux": "^4.0.1"
+  },
+  "dependencies": {
+    "uniq": "^1.0.1"
+  },
+  "scripts": {
+    "start": "browserify main.js -o bundle.js && http-server"
+  }
+}
