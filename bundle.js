@@ -11,29 +11,24 @@ var createStore = require('redux').createStore;
 function todos(state = [], action) {
   switch (action.type) {
     case 'ADD_TODO':
-      return state.concat([action.text])
+      return state.concat([action.text]);
     default:
-      return state
+      return state;
   }
 }
 
 const store = createStore(
   todos,
   ['Use Redux'],
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 store.dispatch({
   type: 'ADD_TODO',
   text: 'Read the docs'
-})
+});
 
-store.dispatch({
-  type: 'ADD_TODO',
-  text: 'Check if this runs'
-})
-
-console.log(store.getState())
-console.log('mwahahahahahahhaa12')
+console.log(store.getState());
+console.log('finished');
 
 },{"redux":2,"uniq":5}],2:[function(require,module,exports){
 (function (process){
